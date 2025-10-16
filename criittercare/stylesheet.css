@@ -1,0 +1,139 @@
+/*موحد*/
+
+/*==========HEADER==========*/
+header{
+	background-color: #7C6BA1;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	padding: 10px 50px;
+	border-bottom: 1px solid #ddd;
+	position: fixed;
+    width: 100%;
+    top: 0;
+	left: 0;
+	right: 0;
+    z-index: 10;
+	
+}
+.logo{
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	margin-left: 10px;
+}
+.logo h1{
+	font-size: 24px;
+	color: white;
+	margin: 0;
+}
+nav ul{
+	list-style: none;
+	display: flex;
+	align-items: stretch;
+	gap: 0;
+	margin: 0;
+	padding: 0;
+	margin-left: 550px;
+}
+nav li{
+	display: flex;
+	align-items: center;
+	padding: 0 18px;
+}
+nav li + li{
+	border-left: 1px solid #ddd;
+}
+nav a{
+	text-decoration: none;
+	color:#F5F3FB;
+	font-weight: bold;
+	line-height: 1.1;
+	text-align: center;
+}
+nav a:hover{
+	color: #E1D9F6;
+}
+
+
+/*==========FOOTER==========*/
+footer{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 20px 60px;
+	background-color: #7C6BA1;
+	color: white;
+	border-top: 1px solid rgba(255,255,255,.35);
+	border-bottom: 1px solid rgba(255, 255, 255, .2);
+	gap: 48px;
+	min-height: 110px;
+}
+.footer-left, .footer-right {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 40px; 
+	text-align: center;
+}
+
+.footer-left{
+	flex: 0 0 auto; 
+	display: 0 0 auto;
+	justify-content: center;
+	align-items: center;
+}
+.footer-right{
+	position: relative;
+	padding-left: 28px;
+	text-align: center;   
+	display: flex;
+	flex-direction: column;  
+	align-items: center;     
+	gap: 6px;
+	flex: 0 0 auto;
+}
+.footer-right img{
+	width: 20px;
+	height: 20px;
+	display: block;
+}
+.footer-right::before{
+	content:"";
+	position: absolute;
+	left: 0;
+	top: 6px;
+	bottom: 6px;
+	width: 2px;
+	background: rgba(255, 255, 255, .55);
+}
+.footer-right h4{
+	margin: 0 0 6px 0; 
+	font-size: 20px;
+	font-weight: 880;
+}
+.footer-right ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.footer-right li{
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	font-size: 15px;
+	margin: 6px 0;
+}
+footer a{
+	color: #D8CFF0;
+	text-decoration: none;
+	}
+footer a:hover{
+	text-decoration: underline;
+}
+/*==========BODY==========*/
+body{
+	padding-top: 100px;
+	margin: 0;
+}
+/* ====== START HERE ====== */
