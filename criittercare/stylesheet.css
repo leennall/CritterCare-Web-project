@@ -1,5 +1,7 @@
 /*موحد*/
 
+
+
 /*==========HEADER==========*/
 header{
 	background-color: #7C6BA1;
@@ -137,3 +139,187 @@ body{
 	margin: 0;
 }
 /* ====== START HERE ====== */
+
+/* ====== HOME  PAGE ====== */
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+  }
+
+  body {
+	background-color: #fafafa;
+	color: #333;
+	line-height: 1.6;
+  }
+
+  .home-main {
+	font-family: "Poppins", Arial, sans-serif;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 40px 20px 80px;
+  }
+
+  /* ===== Vision & Mission ===== */
+  .vm-section {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	flex-wrap: wrap;
+	background-color: #fff;
+	border-radius: 10px;
+	padding: 30px;
+	box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+	margin-bottom: 40px;
+  }
+
+  .vm-block {
+	flex: 1;
+	min-width: 280px;
+	padding: 10px 20px;
+  }
+
+  .vm-section h2 {
+	font-size: 1.4rem;
+	color: #5b4b8a;
+	margin-bottom: 8px;
+  }
+
+  .vm-section p {
+	color: #555;
+	font-size: 15px;
+  }
+
+  .vm-divider {
+	width: 1px;
+	background-color: #ddd;
+	margin: 0 15px;
+  }
+
+  /* ===== Services ===== */
+  .services-title {
+	text-align: center;
+	margin: 50px 0 25px;
+	color: #333;
+	font-size: 1.7rem;
+	font-weight: 600;
+	position: relative;
+  }
+
+  .services-title::after {
+	content: "";
+	display: block;
+	width: 80px;
+	height: 3px;
+	background-color: #7C6BA1;
+	margin: 10px auto 0;
+	border-radius: 2px;
+  }
+
+  .services {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 25px;
+	justify-content: center;
+  }
+/* ===== Services block behavior ===== */.service {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  overflow: hidden;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, background-color 0.25s ease;
+}
+
+/* نغلف المحتوى عشان كل شيء يتحرك معًا */
+.service-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: inherit; /* نفس الانتقالات */
+}
+
+/* hover على البلوك كامل */
+.service:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 18px rgba(0, 0, 0, 0.12);
+}
+
+/* click على البلوك كامل */
+.service:active {
+  background-color: #f1eff8;
+  transform: translateY(0);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+/* الصورة والنصوص ثابتة داخل البلوك */
+.service-content img {
+  width: 100%;
+  height: 170px;
+  object-fit: cover;
+  display: block;
+}
+
+.service-content h3 {
+  margin: 14px 0 6px;
+  font-size: 1.1rem;
+  color: #5b4b8a;
+  font-weight: 600;
+}
+
+.service-content p {
+  margin: 0 18px 18px;
+  font-size: 0.95rem;
+  color: #555;
+}
+  
+  /* ===== Testimonials ===== */
+  .reviews-title {
+	margin: 50px 0 20px;
+	font-weight: bold;
+	font-size: 1.2rem;
+	color: #333;
+  }
+
+  .review {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #fff;
+	border-radius: 10px;
+	box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+	padding: 18px 20px;
+	margin-bottom: 18px;
+	flex-wrap: wrap;
+	gap: 15px;
+  }
+
+  .left {
+	display: flex;
+	align-items: center;
+	gap: 14px;
+	min-width: 0;
+  }
+
+  .avatar {
+	width: 60px;
+	height: 60px;
+	object-fit: cover;
+  }
+
+  .bubble strong {
+	color: #333;
+	font-size: 15px;
+  }
+
+  .bubble p {
+	color: #555;
+	font-size: 14px;
+  }
+
+  .stars {
+	white-space: nowrap;
+	font-size: 18px;
+	color: #f5c518; /* نجوم ذهبية */
+  }
