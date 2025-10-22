@@ -22,63 +22,36 @@
 </nav>
 </header>
 <!-- ====== You begin here! ====== -->
-<main id="customer-dashboard">
-<h1>Hey, you!</h1>
-<section class="actions">
-<a class="cards" href="request.html">
-<div class="car-body">
-<img src="images/request.png" alt="Dog take a shower" width="250">
-<h2>Request a service</h2>
-</div>
-</a>
-<a class="cards" href="evaluation.html">
-<div class="car-body">
-<img src="images/evalution.png" alt="A happy dog" width="250">
-<h2>Rate a service</h2>
-</div>
-</a>
-</section>
-<section class="prev-request">
-<table class="request">
-<caption>Previous requests</caption>
-<!-- Heder of the table-->
-<thead>
-<tr>
-<th>request #</th>
-<th>service</th>
-<th>date</th>
-<th>cost</th>
-<th>status</th>
-</tr>
-</thead>
-<tbody>
-<!-- First header-->
-<tr>
-<td>1</td>
-<td>grooming</td>
-<td><time class="17-10-2025">17-10-2025</time></td>
-<td data-amount="0.00">00.00 SAR</td>
-<td class="status declined">declined</td>
-</tr>
+<main id="request">
+<h1>How can we help?</h1>
+<p>We’d love to help you and your furry friend! Just complete the form and we’ll take care of everythong.</p>
+<form>
+<fieldset>
+<legend>Service request form</legend>
 
-<tr>
-<td>2</td>
-<td>training</td>
-<td><time class="28-9-2025">28-9-2025</time></td>
-<td data-amount="0.00">00.00 SAR</td>
-<td class="status provided">provided</td>
-</tr>
-<!-- Third header-->
-<tr>
-<td>3</td>
-<td>boarding</td>
-<td><time class="9-1-2026">9-1-2026</time></td>
-<td data-amount="0.00">00.00 SAR</td>
-<td class="status declined">declined</td>
-</tbody>
-</tr>
-</table>
-</section>
+<label for="service">Select a srvice:</label><br>
+<select id="service" name="service" placeholder="select service">
+<option value="" disabled selected>Select service</option>
+<option value="groomig">Grooming</option>
+<option value="training">Training</option>
+<option value="boarding">Boarding</option>
+<option value="Veterninary check-up">Veterninary check-up</option>
+</select><br><br>
+
+<label foe="name">Your name:</label><br>
+<input type="text" id="name" name="Customer’s name" placeholder="Customer’s name" required><br><br>
+
+<label>Due date:</label><br>
+<input type="date" id="date" name="date"><br><br>
+
+<label>Request description:</label><br>
+<textarea name="entery" rows="4" cols="40">I would like to..</textarea><br><br>
+
+<input type="submit">
+</fieldset>
+
+
+</form>
 </main>
 <!-- ===== end of my work ===== -->
 <footer>
