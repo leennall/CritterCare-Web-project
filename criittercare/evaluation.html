@@ -24,13 +24,13 @@
 <!-- ====== You begin here! ====== -->
 <main id="evaluation">
 <h1>We’d love to know what you think!</h1>
-<p>We’d love to hear how your experience wa! Fill out form below to leave your feedback.</p>
-</form>
+<p class="lead">We’d love to hear how your experience was! Fill out form below to leave your feedback.</p>
+<form class="form-card">
 <fieldset>
 <legend>Service evaluation form</legend>
 
-<label label for="service">Select a srvice:</label><br>
-<select id="service" name="service" placeholder="select service">
+<label for="service">Service to evaluate:</label><br>
+<select id="service" name="service" required>
 <option value="" disabled selected>Select service</option>
 <option value="groomig">Grooming</option>
 <option value="training">Training</option>
@@ -38,10 +38,10 @@
 <option value="Veterninary check-up">Veterninary check-up</option>
 </select><br><br>
 
-<label>Your rating:</label>
+<label for="star1">Your rating:</label>
 <div class="rating">
 
-<input type="radio" id="star5" name="rating" value="5">
+<input type="radio" id="star5" name="rating" value="5" required>
 <label for="star5" title="5 stars">★</label>
 
 <input type="radio" id="star4" name="rating" value="4">
@@ -56,12 +56,12 @@
 <input type="radio" id="star1" name="rating" value="1">
 <label for="star1">★</label>
 
-</div>
+</div><br><br>
 
 <label>Your feedback (optional):</label><br>
-<textarea name="entery" rows="4" cols="40">I think..</textarea><br><br>
+<textarea id="feedback" name="entery" rows="4" cols="40" placeholder="I think.."></textarea><br><br>
 
-<input type="submit">
+<button type="submit" class="btn">Submit</button>
 </fieldset>
 </form>
 </main>
