@@ -427,6 +427,26 @@ body{
 	align-items: center;
 	text-align: center;
 	justify-content: space-around;
+    overflow-x: auto;
+}
+.member{
+    font-family: "Poppins", Arial, sans-serif;
+   box-sizing: border-box;
+   min-width: 300px;
+   width: 500px;
+   height: 50x;
+    text-align: center;
+
+}
+.member a{
+    text-decoration: none;
+    color: rgb(34, 7, 42);
+}
+.member a:hover{
+    text-decoration: underline;
+}
+.member a:visited{
+    color: rgb(82, 17, 101);
 }
 .form-columns{
 	display: flex;
