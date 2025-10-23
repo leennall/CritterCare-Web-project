@@ -2,7 +2,7 @@
 <html>
 <head> <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Critter Care</title> 
+<title>Critter care - Customer dashboard</title> 
 <link rel="stylesheet" href="stylesheet.css">
 </head>
 <body>
@@ -22,61 +22,67 @@
 </nav>
 </header>
 <!-- ====== You begin here! ====== -->
+<!-- ====== Page content ====== -->
 <main id="customer-dashboard">
-<h1>Hey, you!</h1>
+<h1 class="hed">Hey, you!</h1>
+
+<!-- Action cards -->
 <section class="actions">
 <a class="cards" href="request.html">
-<div class="car-body">
-<img src="images/request.png" alt="Dog take a shower" width="250">
+<div class="cards-body">
+<img src="images/request.png" alt="Dog taking a shower" width="250">
 <h2>Request a service</h2>
 </div>
 </a>
+
 <a class="cards" href="evaluation.html">
-<div class="car-body">
+<div class="cards-body">
 <img src="images/evalution.png" alt="A happy dog" width="250">
 <h2>Rate a service</h2>
 </div>
 </a>
 </section>
+
+<!-- Previous requests table -->
 <section class="prev-request">
 <table class="request">
-<caption>Previous requests</caption>
+<caption><h1>Previous requests:</h1></caption>
 <!-- Heder of the table-->
 <thead>
 <tr>
-<th>request #</th>
-<th>service</th>
-<th>date</th>
-<th>cost</th>
-<th>status</th>
+<th>Request #</th>
+<th>Service</th>
+<th>Date</th>
+<th>Cost</th>
+<th>Status</th>
 </tr>
 </thead>
 <tbody>
 <!-- First header-->
 <tr>
-<td>1</td>
-<td>grooming</td>
-<td><time class="17-10-2025">17-10-2025</time></td>
-<td data-amount="0.00">00.00 SAR</td>
-<td class="status declined">declined</td>
+<td class="number">1</td>
+<td>Grooming</td>
+<td><time datetime="17-10-2025">17-10-2025</time></td>
+<td>00.00 SAR</td>
+<td class="status declined">Declined</td>
 </tr>
 
 <tr>
-<td>2</td>
-<td>training</td>
-<td><time class="28-9-2025">28-9-2025</time></td>
-<td data-amount="0.00">00.00 SAR</td>
-<td class="status provided">provided</td>
+<td class="number">2</td>
+<td>Training</td>
+<td><time datetime="28-9-2025">28-9-2025</time></td>
+<td>00.00 SAR</td>
+<td class="status provided">Provided</td>
 </tr>
 <!-- Third header-->
 <tr>
-<td>3</td>
-<td>boarding</td>
-<td><time class="9-1-2026">9-1-2026</time></td>
-<td data-amount="0.00">00.00 SAR</td>
-<td class="status declined">declined</td>
-</tbody>
+<td class="number">3</td>
+<td>Boarding</td>
+<td><time datetime="9-1-2026">9-1-2026</time></td>
+<td>00.00 SAR</td>
+<td class="status declined">Declined</td>
 </tr>
+</tbody>
 </table>
 </section>
 </main>
