@@ -142,8 +142,6 @@ body{
 
 
 /* ====== HOME  PAGE ====== */
-
-
 .home-body {
     background-color: #fafafa;
     color: #333;
@@ -161,45 +159,60 @@ body{
 .vm-section {
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    align-items: stretch;
     background-color: #fff;
-    border-radius: 12px;
-    padding: 40px 50px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    border-radius: 16px;
+    padding: 50px 40px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
     margin-bottom: 50px;
-    gap: 50px;
+    gap: 60px;
+    position: relative;
 }
 
-.vm-block {
+.vm-block{
     flex: 1;
-    max-width: 400px;
+    max-width: 450px;
     padding: 0;
-    text-align: left;
 }
 
 .vm-section h2 {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     color: #5b4b8a;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
     font-weight: 700;
     text-align: left;
+    position: relative;
+    padding-bottom: 12px;
+    font-family: inherit; 
+}
+
+.vm-section h2::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    height: 3px;
 }
 
 .vm-section p {
     color: #555;
-    font-size: 16px;
-    line-height: 1.7;
+    font-size: 18px;
+    line-height: 1.8;
     margin: 0;
     text-align: left;
 }
 
 .vm-divider {
     width: 1px;
-    background-color: #e0e0e0;
+    background: linear-gradient(to bottom, 
+        transparent 0%, 
+        #e0e0e0 20%, 
+        #e0e0e0 80%, 
+        transparent 100%);
     flex-shrink: 0;
-    height: 180px;
-    align-self: center;
-    margin: 0;
+    height: auto;
+    margin: 20px 0;
 }
 
 .vm-end {
@@ -207,19 +220,19 @@ body{
     width: 80%;
     border: none;
     border-top: 1px solid #eee;
-}/* ===== Services Section ===== */
+}
 /* ===== Services Section ===== */
 .services-section {
     margin: 60px 0;
 }
-
 .services-title {
     text-align: center;
     margin: 0 0 40px;
     color: #333;
     font-size: 1.8rem;
-    font-weight: 700;
+    font-weight: 700; 
     position: relative;
+    font-family: inherit; 
 }
 
 .services-title::after {
@@ -237,7 +250,7 @@ body{
     flex-wrap: wrap;
     gap: 25px;
     justify-content: center;
-    max-width: 1100px; /* Increased from 1000px */
+    max-width: 1100px; 
     margin: 0 auto;
 }
 
@@ -258,6 +271,12 @@ body{
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
+
+.service:active {
+	background-color: #f1eff8;
+	transform: translateY(0);
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  }
 .service-overview {
     padding: 0;
 }
@@ -355,26 +374,35 @@ body{
     background-color: #fff;
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-    padding: 20px 25px;
-    margin-bottom: 20px;
+    padding: 25px 30px; 
+    margin-bottom: 25px;
     flex-wrap: wrap;
-    gap: 15px;
-    max-width: 900px;
+    gap: 20px; 
+    max-width: 920px;
     margin-left: auto;
     margin-right: auto;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.review:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    border-color: #7C6BA1;
+    background-color: #faf9ff;
 }
 
 .left {
     display: flex;
     align-items: center;
-    gap: 14px;
+    gap: 18px;
     min-width: 0;
     flex: 1;
 }
 
 .avatar {
-    width: 48px;
-    height: 48px;
+    width: 55px; 
+    height: 55px; 
     object-fit: cover;
 }
 
@@ -384,31 +412,43 @@ body{
 
 .bubble strong {
     color: #333;
-    font-size: 15px;
+    font-size: 16px;
     display: block;
 }
 
 .service-name {
     color: #7C6BA1;
-    font-size: 13px;
+    font-size: 14px;
     font-weight: 600;
     display: block;
-    margin: 2px 0 5px 0;
+    margin: 3px 0 6px 0;
 }
 
 .bubble p {
     color: #555;
-    font-size: 14px;
-    margin: 8px 0 0 0;
-    line-height: 1.5;
+    font-size: 15px;
+    margin: 10px 0 0 0; 
+    line-height: 1.6;
 }
 
 .stars {
     white-space: nowrap;
-    font-size: 18px;
+    font-size: 20px;
     color: #f5c518;
-    margin-left: 20px;
+    margin-left: 25px;
 }
+
+
+/* ===== Services Page ===== */
+
+
+
+
+
+
+
+
+
 
 
 
