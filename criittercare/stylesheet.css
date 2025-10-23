@@ -323,7 +323,84 @@ body{
 	font-size: 18px;
 	color: #f5c518; /* نجوم ذهبية */
   }
-  .sar{
-	margin-right: 5px;
-	color: #7C6BA1;
-  }
+   /* ===== about us css ===== */
+  h2{
+	font-family: "Poppins", Arial, sans-serif;
+	color: rgb(108, 127, 220);
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.staff-member {
+	font-family: "Poppins", Arial, sans-serif;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	text-align: center;
+	justify-content: space-around;
+}
+.form-columns{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin: 20px;
+}
+div.staff-member img{
+	width: 160px;
+	height: 160px;
+	border: 50%;
+	justify-content: space-around;
+	
+}
+.application-form{
+	font-family: "Poppins", Arial, sans-serif;
+	border: 0.5px;
+	padding: 20px 150px;
+	margin: 0 32px;
+	position: center;
+	
+}
+.form
+.left-column{
+	align-items: flex-start;
+}
+.center-column{
+	align-items: center;
+}
+.right-column{
+	align-items: flex-end;
+}
+button{
+	text-align: center;
+	justify-content: center;
+	margin-top: 20px;
+	background-color: #D8CFF0;
+	color: rgb(34, 7, 42);
+	padding: 5px 10px;
+}
+table{
+	font-family: "Poppins", Arial, sans-serif;
+	margin: 20px;
+	border: 2px solid #ddd;
+}
+thead{
+	background-color: #85ccd1;
+	color: white;
+	text-align: center;
+}
+th, td{
+	padding: 10px 15px;
+	border: 1px solid #ddd;
+	text-align: center;
+}
+.profile-link{
+	display: inline-block;
+	margin: 10px;
+	padding: 2px 10px;
+	background-color: #D8CFF0;
+	color: rgb(34, 7, 42);
+	text-decoration: none;
+	
+}
+
+/* ===== about us css ===== */
