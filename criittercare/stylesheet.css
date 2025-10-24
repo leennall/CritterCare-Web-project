@@ -879,16 +879,16 @@ div.staff-member img{
 table{
 	font-family: "Poppins", Arial, sans-serif;
 	margin: 20px;
-	border: 2px solid #ddd;
+	border: 1px solid #272525;
 }
 thead{
-	background-color: #85ccd1;
+	background-color: #3e2e48;
 	color: white;
 	text-align: center;
 }
 th, td{
 	padding: 10px 15px;
-	border: 1px solid #ddd;
+	border: 1px solid #2d2b2b;
 	text-align: center;
 }
 .profile-link{
@@ -898,8 +898,23 @@ th, td{
 	background-color: #D8CFF0;
 	color: rgb(34, 7, 42);
 	text-decoration: none;
-	
+  border-radius: 4px;
 }
+table dl{
+  text-align: left;
+}
+table dl dt dd{
+  list-style-type: circle;
+}
+table a{
+  color: rgb(53, 36, 59);
+  text-decoration: none;
+}
+table a:hover{
+  text-decoration: underline;
+  background-color: rgba(209, 169, 209, 0.32);
+}
+
 /* ====== Customer dashboard ====== */
  
  /*For all of the page ترتب الصفحة*/
