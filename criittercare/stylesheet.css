@@ -453,12 +453,21 @@ body{
 
 
    /* ===== about us css ===== */
-  h2{
-	font-family: "Poppins", Arial, sans-serif;
-	color: rgb(108, 127, 220);
-	text-align: center;
-	margin-top: 20px;
-	margin-bottom: 20px;
+  .about-title{
+    text-align: center;
+    color: #352c2c;
+    font-size: 1.8rem;
+    font-weight: 700; 
+    font-family: inherit; 
+}
+.about-title::after {
+   content: "";
+    display: block;
+    width: 100px;
+    height: 4px;
+    background-color: #7C6BA1;
+    margin: 15px auto 0;
+    border-radius: 2px;
 }
 .staff-member {
 	font-family: "Poppins", Arial, sans-serif;
@@ -468,7 +477,7 @@ body{
 	text-align: center;
 	justify-content: space-around;
     overflow-x: auto;
-    padding-top: 20px;
+    padding-top: 10px;
     border-bottom: 1px solid #000000;
 }
 .member{
@@ -517,13 +526,27 @@ div.staff-member img{
 	
 }
 .application-form{
-	font-family: "Poppins", Arial, sans-serif;
-	border: 0.5px;
-	padding: 20px 150px;
-	margin: 0 32px;
-	position: center;
-	
-}
+	 background: #ece4f7;
+	 border: 1px solid #cfcfcf;
+	 border-radius: 24px;
+	 padding: 28px 28px 22px;
+	 max-width: 850px;
+	 margin: 0 auto;
+ }
+ .application-form fieldset{
+	 background: #ece4f7;
+   border: none;
+ }
+ /*Title if the form*/
+ .application-form legend{
+	 font-size: 24px;
+	 font-weight: 700;
+	 text-align: center;
+	 color: #333;
+	 padding: 0 12px;
+	 margin-bottom: 14px;
+ }
+
 .form
 .left-column{
 	align-items: flex-start;
@@ -541,6 +564,7 @@ button{
 	background-color: #D8CFF0;
 	color: rgb(34, 7, 42);
 	padding: 5px 10px;
+
 }
 table{
 	font-family: "Poppins", Arial, sans-serif;
