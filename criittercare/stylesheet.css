@@ -468,6 +468,8 @@ body{
 	text-align: center;
 	justify-content: space-around;
     overflow-x: auto;
+    padding-top: 20px;
+    border-bottom: 1px solid #000000;
 }
 .member{
     font-family: "Poppins", Arial, sans-serif;
@@ -483,10 +485,23 @@ body{
     color: rgb(34, 7, 42);
 }
 .member a:hover{
-    text-decoration: underline;
+    transform: translateY(5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    background-color: rgba(209, 169, 209, 0.32);
 }
 .member a:visited{
     color: rgb(82, 17, 101);
+}
+.staff-photo{
+  width: 160px;
+  height: 160px;
+  border:0.5px solid #ddd;
+  border-radius: 50%;
+}
+.staff-photo:hover{
+  border: 2px solid #7C6BA1;
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 .form-columns{
 	display: flex;
