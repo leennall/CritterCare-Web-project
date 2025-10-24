@@ -11,12 +11,11 @@ header{
 	padding: 10px 50px;
 	border-bottom: 1px solid #ddd;
 	position: fixed;
-    width: 100%;
-    top: 0;
+  width: 100%;
+  top: 0;
 	left: 0;
 	right: 0;
-    z-index: 10;
-	
+  z-index: 10;
 }
 .logo{
 	display: flex;
@@ -362,7 +361,7 @@ body{
 .reviews-title {
     margin: 60px 0 25px;
     font-weight: bold;
-    font-size: 1.4rem;
+    font-size: 26px;
     color: #333;
     text-align: center;
 }
@@ -438,9 +437,299 @@ body{
     margin-left: 25px;
 }
 
+.reviews-end {
+  
+  margin: 50px auto;
+  width: 80%;
+  border: none;
+  border-top: 1px solid #eee;
+}
+  
+
+
+/* ===== FAQ Section ===== */
+.faq-section {
+  margin: 60px 0;
+  padding: 0 20px;
+}
+
+.faq-title {
+  text-align: center;
+  margin: 0 0 40px;
+  color: #333;
+  font-size: 1.8rem;
+  font-weight: 700;
+  position: relative;
+  font-family: inherit;
+}
+
+.faq-title::after {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 4px;
+  background-color: #7C6BA1;
+  margin: 15px auto 0;
+  border-radius: 2px;
+}
+
+.faq-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.faq-item {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  margin-bottom: 16px;
+  overflow: hidden;
+  border: 1px solid #f0f0f0;
+  transition: all 0.3s ease;
+}
+
+.faq-item:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.faq-toggle {
+  display: none;
+}
+
+.faq-question {
+  padding: 20px 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  background: #fff;
+  transition: background-color 0.3s ease;
+  margin: 0;
+}
+
+.faq-question:hover {
+  background-color: #faf9ff;
+}
+
+.faq-question h3 {
+  margin: 0;
+  font-size: 1.1rem;
+  color: #5b4b8a;
+  font-weight: 600;
+  flex: 1;
+}
+
+.faq-icon {
+  font-size: 1.5rem;
+  color: #7C6BA1;
+  font-weight: bold;
+  transition: transform 0.3s ease;
+}
+
+.faq-answer {
+  padding: 0 25px;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  background: #fff;
+}
+
+.faq-answer p {
+  margin: 0;
+  padding: 16px 0 0 0;
+  color: #555;
+  font-size: 17px;
+  line-height: 1.6;
+
+}
+
+/* CSS-only toggle functionality */
+.faq-toggle:checked ~ .faq-answer {
+  max-height: 200px;
+  padding: 0 25px 20px 25px;
+}
+
+.faq-toggle:checked ~ .faq-question .faq-icon {
+  transform: rotate(45deg);
+}
+
+.faq-toggle:checked ~ .faq-question {
+  background-color: #f8f6ff;
+}
+
 
 /* ===== Services Page ===== */
+.services-main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px 80px;
+}
 
+/* Services Header */
+
+.services-header {
+  text-align: center;
+  margin-bottom: 30px;
+  margin-top: 55px;
+}
+
+.services-header h1 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 15px;
+  font-weight: 700;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+}
+
+.services-header h1::after {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 4px;
+  background-color: #7C6BA1;
+  margin: 10px auto 0;
+  border-radius: 2px;
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.star-icon {
+  width: 40px;
+  height: relative;
+}
+
+.services-header p {
+  font-size: 1.1rem;
+  color: #555;
+  margin-top: 40px;
+}
+
+
+
+
+/* Sorting Section */
+.sorting-section {
+  margin-bottom: 40px;
+  text-align: left;
+}
+
+.sort-container {
+  display: inline-block;
+  background: #fff;
+  padding: 15px 25px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.sort-container label {
+  font-weight: 600;
+  color: #333;
+  margin-right: 15px;
+}
+
+#sort-services:hover {
+  border-color: #7C6BA1;
+}
+
+
+#sort-services:focus {
+  outline: none;
+  border-color: #7C6BA1;
+  box-shadow: 0 0 0 2px rgba(124, 107, 161, 0.1);
+}
+
+
+#sort-services {
+  padding: 8px 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background: white;
+  color: #333;
+  font-size: 1rem;
+}
+
+#sort-services optgroup {
+  font-weight: 600;
+  color: #5b4b8a;
+}
+
+#sort-services option {
+  font-weight: normal;
+  color: #333;
+}
+
+/* Services Grid */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 60px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.service-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  transition: all 0.3s ease;
+  border: 1px solid #f0f0f0;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.service-image {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+
+.service-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.service-info {
+  padding: 20px;
+}
+
+.service-name {
+  font-size: 1.3rem;
+  color: #5b4b8a;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.service-description {
+  color: #555;
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+.service-price {
+  font-size: 1.1rem;
+  color: #7C6BA1;
+  font-weight: 600;
+  margin: 0;
+}
+
+.service-card:active {
+	background-color: #f1eff8;
+	transform: translateY(0);
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
 
 
 
