@@ -26,7 +26,81 @@
 <!-- ===== breadcrumbs ===== -->
 
 <!-- ===== page content -->
- <main></main>
+<main class="services-main">
+    <!-- ===== Services Header ===== -->
+    <section class="services-header">
+        <h1>
+            <img src="images/icons/star.png" alt="star" class="star-icon">
+            Our Services
+            <img src="images/icons/star.png" alt="star" class="star-icon">
+        </h1>
+        <p>Professional care for your beloved pets</p>
+    </section>
+    
+    <!-- ===== Sorting Options ===== -->
+    <section class="sorting-section">
+        <div class="sort-container">
+            <label for="sort-services">Sort Services:</label>
+            <select id="sort-services" name="sort-services">
+                <optgroup label="Price">
+                    <option value="price-low-high">Price: Low to High</option>
+                    <option value="price-high-low">Price: High to Low</option>
+                </optgroup>
+                <optgroup label="Name">
+                    <option value="name-a-z">Name: A to Z</option>
+                    <option value="name-z-a">Name: Z to A</option>
+                </optgroup>
+            </select>
+        </div>
+    </section>
+    
+    <!-- ===== Services Grid ===== -->
+    <section class="services-grid">
+        <div class="service-card">
+            <div class="service-image">
+                <img src="images/serviceA.jpg" alt="Grooming Service">
+            </div>
+            <div class="service-info">
+                <h3 class="service-name">Grooming</h3>
+                <p class="service-description">Professional grooming services including bath, haircut, nail trimming, and ear cleaning to keep your pet looking and feeling their best.</p>
+                <p class="service-price">Starting at $45</p>
+            </div>
+        </div>
+    
+        <div class="service-card">
+            <div class="service-image">
+                <img src="images/serviceB.jpg" alt="Training Service">
+            </div>
+            <div class="service-info">
+                <h3 class="service-name">Training</h3>
+                <p class="service-description">Behavior and obedience training programs to help your pet develop good manners and social skills.</p>
+                <p class="service-price">Starting at $60/session</p>
+            </div>
+        </div>
+    
+        <div class="service-card">
+            <div class="service-image">
+                <img src="images/serviceC.jpg" alt="Boarding Service">
+            </div>
+            <div class="service-info">
+                <h3 class="service-name">Boarding</h3>
+                <p class="service-description">Safe and comfortable overnight stays with 24/7 supervision, regular exercise, and daily updates.</p>
+                <p class="service-price">Starting at $35/night</p>
+            </div>
+        </div>
+    
+        <div class="service-card">
+            <div class="service-image">
+                <img src="images/serviceD.jpg" alt="Veterinary Service">
+            </div>
+            <div class="service-info">
+                <h3 class="service-name">Veterinary</h3>
+                <p class="service-description">Comprehensive medical care including checkups, vaccinations, emergency services, and dental care.</p>
+                <p class="service-price">Starting at $50/visit</p>
+            </div>
+        </div>
+    </section>
+    </main>
 
 
 <footer>
