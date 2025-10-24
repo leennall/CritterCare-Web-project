@@ -2,7 +2,7 @@
 <html>
 <head> <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Critter Care</title> 
+<title>Critter Care - Request service</title> 
 <link rel="stylesheet" href="stylesheet.css">
 </head>
 <body>
@@ -24,30 +24,30 @@
 <!-- ====== You begin here! ====== -->
 <main id="request">
 <h1>How can we help?</h1>
-<p>We’d love to help you and your furry friend! Just complete the form and we’ll take care of everythong.</p>
-<form>
+<p class="lead">We’d love to help you and your friend! Just complete the form and we’ll take care of everything.</p>
+<form class="form-card">
 <fieldset>
 <legend>Service request form</legend>
 
-<label for="service">Select a srvice:</label><br>
-<select id="service" name="service" placeholder="select service">
+<label for="service">Select a service:</label><br>
+<select id="service" name="service" placeholder="select service" required>
 <option value="" disabled selected>Select service</option>
 <option value="groomig">Grooming</option>
 <option value="training">Training</option>
 <option value="boarding">Boarding</option>
-<option value="Veterninary check-up">Veterninary check-up</option>
+<option value="Veterninary-check-up">Veterninary check-up</option>
 </select><br><br>
 
-<label foe="name">Your name:</label><br>
+<label for="name">Your name:</label><br>
 <input type="text" id="name" name="Customer’s name" placeholder="Customer’s name" required><br><br>
 
 <label>Due date:</label><br>
-<input type="date" id="date" name="date"><br><br>
+<input type="date" id="date" name="date" required><br><br>
 
-<label>Request description:</label><br>
-<textarea name="entery" rows="4" cols="40">I would like to..</textarea><br><br>
+<label for="details">Request description:</label><br>
+<textarea name="entery" id="details" rows="4" cols="40"  placeholder="I would like to…"></textarea><br><br>
 
-<input type="submit">
+<button type="submit" class="btn">Submit</button>
 </fieldset>
 
 
