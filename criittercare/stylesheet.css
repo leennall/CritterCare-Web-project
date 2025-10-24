@@ -493,10 +493,15 @@ body{
     text-decoration: none;
     color: rgb(34, 7, 42);
 }
-.member a:hover{
+.staff-name a:hover{
     transform: translateY(5px);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
     background-color: rgba(209, 169, 209, 0.32);
+    font-size: larger;
+}
+.staff-photo a:hover{
+    transform: translateY(5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 .member a:visited{
     color: rgb(82, 17, 101);
@@ -531,7 +536,7 @@ div.staff-member img{
 	 border-radius: 24px;
 	 padding: 28px 28px 22px;
 	 max-width: 850px;
-	 margin: 0 auto;
+	 margin: 10px auto;
  }
  .application-form fieldset{
 	 background: #ece4f7;
@@ -545,27 +550,43 @@ div.staff-member img{
 	 color: #333;
 	 padding: 0 12px;
 	 margin-bottom: 14px;
+ 
  }
-
-.form
-.left-column{
-	align-items: flex-start;
-}
-.center-column{
-	align-items: center;
-}
-.right-column{
-	align-items: flex-end;
-}
-button{
-	text-align: center;
-	justify-content: center;
-	margin-top: 20px;
-	background-color: #D8CFF0;
-	color: rgb(34, 7, 42);
-	padding: 5px 10px;
+.form-sections{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 
 }
+.left-side{
+  flex:3;
+  align-items: flex-start;
+	left: 0%;
+}
+.middle-side{
+  flex:3;
+  align-items: center;
+	left: 50%;
+}
+.right-side{
+  flex:3;
+  align-items: flex-end;
+	right: 0%;
+}
+.btnApp{
+	 display: block;
+	 min-width: 120px;
+	 border: 0;
+  padding: 10px 25px;
+  margin: 20px auto;
+	 border-radius: 8px;
+	 background: #7C6BA1;
+	 color: #fff;
+	 font-weight: 600;
+	 cursor: pointer;
+	 text-align: center;
+   
+ }
 table{
 	font-family: "Poppins", Arial, sans-serif;
 	margin: 20px;

@@ -26,81 +26,111 @@
    <h2 class="about-title">About Our Staff</h2>
 <div class="staff-member">
    <div class="member">
-     <img src="images/staff/staff1.jpg" alt="Staff Member 1" class="staff-photo">
-     <h3><a href="StaffProfile.html" >Raneem Alotaibi</a></h3>
+     <a href="StaffProfile.html"><img src="images/staff/staff1.jpg" alt="Staff Member 1" class="staff-photo"></a>
+     <h3 class="staff-name"><a href="StaffProfile.html" >Raneem Alotaibi</a></h3>
      <p>Founder & CEO</p>
 </div>
    <div class="member">
-     <img src="images/staff/staff1.jpg" alt="Staff Member 2" class="staff-photo">
-     <h3><a href="StaffProfile.html">Sarah Alghamdi</a></h3>
+     <a href="StaffProfile.html"><img src="images/staff/staff1.jpg" alt="Staff Member 2" class="staff-photo"></a>
+     <h3 class="staff-name"><a href="StaffProfile.html">Sarah Alghamdi</a></h3>
      <p>Chief Operating Officer</p>
    </div>
    <div class="member">
-     <img src="images/staff/staff1.jpg" alt="Staff Member 3" class="staff-photo">
-     <h3><a href="StaffProfile.html" >Layla Alzahrani</a></h3>
+     <a href="StaffProfile.html"><img src="images/staff/staff1.jpg" alt="Staff Member 3" class="staff-photo"></a>
+     <h3 class="staff-name"><a href="StaffProfile.html" >Layla Alzahrani</a></h3>
      <p>Head of Customer Service</p>
    </div>
    <div class="member">
-     <img src="images/staff/staff1.jpg" alt="Staff Member 4" class="staff-photo">
-     <h3><a href="StaffProfile.html" >Ali Alharthy</a></h3>
+     <a href="StaffProfile.html"><img src="images/staff/staff1.jpg" alt="Staff Member 4" class="staff-photo"></a>
+     <h3 class="staff-name"><a href="StaffProfile.html" >Ali Alharthy</a></h3>
      <p>Marketing Specialist</p>
    </div>
    <div class="member">
-     <img src="images/staff/staff1.jpg" alt="Staff Member 5" class="staff-photo">
-     <h3><a href="StaffProfile.html" >Noura Almutairi</a></h3>
+     <a href="StaffProfile.html"><img src="images/staff/staff1.jpg" alt="Staff Member 5" class="staff-photo"></a>
+     <h3 class="staff-name"><a href="StaffProfile.html" >Noura Almutairi</a></h3>
      <p>Lead Veterinarian</p>
    </div>
    <div class="member">
-     <img src="images/staff/staff1.jpg" alt="Staff Member 6" class="staff-photo">
-     <h3><a href="StaffProfile.html" >Omar Alshammari</a></h3>
+     <a href="StaffProfile.html"><img src="images/staff/staff1.jpg" alt="Staff Member 6" class="staff-photo"></a>
+     <h3 class="staff-name"><a href="StaffProfile.html" >Omar Alshammari</a></h3>
      <p>Senior Animal Caretaker</p>
 </div>
 </section>
 <br>
 <br>
 <section class="join-us">
-<h2 class="about-title">Join our Team</h2>
-<form action="#" method="post" class="application-form">
-   <fieldset>
-   <legend>Application Form</legend>
-   </fieldset>
-   <div class="form-columns">
-   <div class="left-column">
-   <dl>
-      <dt> <p>Full Name</p></dt>
-      <dd><input type="text" name="Full Name" placeholder="Your Name"></dd>
+  <h2 class="about-title">Join our Team</h2>
 
-       <dt><p>Email</p></dt>
-      <dd><input type="email" name="Email" placeholder="Your Email"></dd>
+  <form action="#" method="post" class="application-form">
+    <fieldset>
+      <legend>Application Form</legend>
 
-     <dt><p>Staff photo</p></dt>
-      <dd><input type="file" name="Staff Photo"></dd>
-   </dl>
-   </div>
-   <div class="center-column">
-   <dl>
-      <dt><p>Date of Birth</p></dt>
-      <dd><input type="date" name="Date of Birth"></dd>
+      <div class="form-sections">
+        <!-- Left -->
+        <div class="left-side">
+          <label for="name">Full Name:</label>
+          <br>
+          <input type="text" id="name" name="name" placeholder="Sarah Alghamdi">
+          <br>
+          <br>
+          <br>
+          <label for="email">Email Address:</label>
+          <input type="email" id="email" name="email" placeholder="name@gmail.com">
+            <br>
+            <br>
+            <br>
+          <label for="photo">Photo:</label>
+          <input type="file" id="photo" name="photo" accept="image/*">
+<br>
+            <br>
+            <br>
+          <label for="DoB">Date of Birth:</label>
+          <input type="date" id="DoB" name="DoB" required>
+        </div>
 
-      <dt><p>Areas of Expertise</p></dt>
-      <dd><input type="text" name="Areas of Expertise" placeholder="Your Areas of Expertise"></dd>
-      <dd><input type="text" name="Areas of Expertise" placeholder="Your Areas of Expertise"></dd>
-      <dd><input type="text" name="Areas of Expertise" placeholder="Your Areas of Expertise"></dd>
-      <dt><p>Education</p></dt>
-      <dd><textarea name="Education" rows="3" cols="30" placeholder="Your Education"></textarea></dd>
-   </dl>
-   </div>
-   <div class="right-column">
-   <dl>
-      <dt><p>Skills</p></dt>
-      <dd><textarea name="Skills" rows="3" cols="30" placeholder="Your Skills"></textarea></dd>
-      <dt><p>Message</p></dt>
-      <dd><textarea name="Message" rows="3" cols="30" placeholder="Your Message"></textarea></dd></dl>
-   </div>
-   </div>
-   <button type="submit" style="width: 130px; height: 30px; background-color: rgb(187, 168, 200);color: rgb(255, 255, 255); position: relative; left: 300px; bottom: 20px;">Submit Application</button>
-   </fieldset>
-   </form>
+        <!-- Middle -->
+        <div class="middle-side">
+          <label for="position">Position Applied For:</label>
+          <select id="position" name="position">
+            <option value="" disabled selected>Select position</option>
+            <option value="animal-caretaker">Animal Caretaker</option>
+            <option value="groomer">Groomer</option>
+            <option value="trainer">Trainer</option>
+            <option value="veterinarian">Veterinarian</option>
+            <option value="customer-service-rep">Customer Service Representative</option>
+          </select>
+<br>
+            <br>
+          <!-- خلي اللِّيبِل عنوان مجموعة بدون for -->
+          <label>Relevant Experience:</label>
+          <input type="text" id="experience1" name="experience[]" placeholder="Experience 1">
+          <br>
+            <br>
+          <input type="text" id="experience2" name="experience[]" placeholder="Experience 2">
+            <br>
+            <br>
+          <input type="text" id="experience3" name="experience[]" placeholder="Experience 3">
+          <br>
+            <br>
+            <br>
+          <label for="skills">Skills & Qualifications:</label>
+          <textarea id="skills" name="skills" rows="4" cols="40" placeholder="List your skills and qualifications..."></textarea>
+        </div>
+
+        <!-- Right -->
+        <div class="right-side">
+          <label for="education">Education:</label>
+          <textarea id="education" name="education" rows="4" cols="40" placeholder="List your educational background..."></textarea>
+<br>
+            <br>
+            <br>
+          <label for="message">General message:</label>
+          <textarea id="message" name="message" rows="4" cols="40" placeholder="Enter your message..."></textarea>
+        </div>
+      </div>
+      <button type="submit" class="btnApp">Submit Application</button>
+    </fieldset>
+  </form>
 </section>
 </main>
 
